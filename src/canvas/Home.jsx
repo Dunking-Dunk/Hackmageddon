@@ -1,23 +1,10 @@
-import { useRef, useState, useEffect, Suspense } from 'react';
+import { useRef, Suspense } from 'react';
 import * as THREE from 'three'
 import { Canvas, extend, useFrame } from '@react-three/fiber'
-import { Preload, shaderMaterial, useGLTF, ScrollControls, Scroll, useScroll, Float, Select, OrbitControls } from "@react-three/drei";
+import { Preload, shaderMaterial, useGLTF, useScroll, Float, } from "@react-three/drei";
 import { Leva, useControls } from 'leva'
 import { EffectComposer, Noise, Glitch, Selection, ChromaticAberration } from '@react-three/postprocessing'
 import { BlendFunction } from 'postprocessing'
-
-import { Plane } from './Background';
-import Hero from '../components/Hero/Hero'
-import About from '../components/About/About'
-import Event from '../components/Event/Event'
-import Team from '../components/Team/Team'
-import Marque from '../components/Marque/Marque'
-import Gallery from '../components/Gallery/Gallery'
-import Contact from '../components/Contact/Contact'
-import Footer from '../components/Footer/Footer'
-import Header from '../components/Header/Header'
-import { ScrollManager } from '../components/ScrollManager';
-import Loader from '../components/Loader/Loader';
 
 import { Vaporwave } from './Vaporwave';
 
@@ -134,57 +121,11 @@ function FaceModel(props) {
 useGLTF.preload('./face2/scene.gltf')
 
 
-const Interface = (props) => {
-    const clientRef = useRef()
-    const { navigate, setTotalHeight } = props
 
-    useEffect(() => {
-        const resizeObserver = new ResizeObserver(entries =>
-            setTotalHeight(entries[0].target.clientHeight)
-        )
-        resizeObserver.observe(clientRef.current)
-    }, [])
+const HomeCanvas = () => {
 
     return (
-        <div style={{ width: '100vw', display: 'flex', flexDirection: 'column', height: '100%' }} ref={clientRef} >
-            <Hero />
-            <About />
-            <Event navigate={navigate} />
-
-            <div className='shedule__slot' >
-                <h2 className='event__sub__title'>Slot</h2>
-                <div className='shedule__container'>
-                    <img src={require(`../assets/images/1.webp`)} className='shedule__image' />
-                    <img src={require(`../assets/images/2.webp`)} className='shedule__image' />
-                </div>
-            </div>
-
-            {/* <Team /> */}
-            <Gallery navigate={navigate} >
-                <img src={require(`../assets/images/gallery/1.webp`)} alt="slide_image" className='gallery__image' />
-                {/* <img src={require(`../assets/images/gallery/2.webp`)} alt="slide_image" className='gallery__image' />  */}
-                <img src={require(`../assets/images/gallery/8.webp`)} alt="slide_image" className='gallery__image' />
-            </Gallery>
-            <Contact />
-            <Footer />
-        </div>
-    )
-}
-
-
-
-const HomeCanvas = ({ navigate }) => {
-    const [started, setStarted] = useState(false);
-    const [section, setSection] = useState(0);
-    const [totalHeight, setTotalHeight] = useState(0)
-
-
-    return (
-        <div style={{ width: '100%', height: '100dvh' }}>
-            {
-                started && <Header onSectionChange={setSection} />
-            }
-            <Loader started={started} setStarted={setStarted} />
+        <div style={{ width: '100%', height: '100dvh', position: 'fixed', zIndex: 0 }}>
             <Canvas
                 gl={{ preserveDrawingBuffer: true, antialias: true }}
                 frameloop='always'
@@ -193,33 +134,15 @@ const HomeCanvas = ({ navigate }) => {
             >
                 <ambientLight intensity={5} />
                 <Suspense>
-                    {
-                        started && (
-                            <Selection autoClear={false}>
-                                <EffectComposer disableNormalPass multisampling={1} >
-                                    <Noise opacity={0.1} />
-                                    <ChromaticAberration blendFunction={BlendFunction.NORMAL}
-                                        offset={[0.009, 0.001]} />
-                                </EffectComposer>
-                                <Select enabled>
-                                    {/* <Plane /> */}
-                                    <Vaporwave />
-                                </Select>
-                                <Select>
-                                    <ScrollControls damping={0.1} pages={totalHeight / window.innerHeight} >
-                                        <ScrollManager section={section} onSectionChange={setSection} />
-                                        <Scroll>
+                    <Selection autoClear={false}>
 
-                                        </Scroll>
-                                        <Scroll html>
-                                            <Interface setTotalHeight={setTotalHeight} navigate={navigate} />
-                                        </Scroll>
-                                    </ScrollControls>
-                                </Select>
-                            </Selection>
-
-                        )
-                    }
+                        <EffectComposer disableNormalPass multisampling={1} >
+                            <Noise opacity={0.1} />
+                            <ChromaticAberration blendFunction={BlendFunction.NORMAL}
+                                offset={[0.009, 0.001]} />
+                        </EffectComposer>
+                        <Vaporwave />
+                    </Selection>
                 </Suspense>
                 <Leva hidden />
                 <Preload all />

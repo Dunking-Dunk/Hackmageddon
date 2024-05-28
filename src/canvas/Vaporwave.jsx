@@ -6,22 +6,22 @@ import { useControls } from 'leva'
 
 
 export function Vaporwave(props) {
-  const ref = useRef()
+  const refe = useRef()
   const group = useRef()
   const { backgroundColor } = useControls({ backgroundColor: '#2a004e' })
   const { nodes, materials, animations } = useGLTF('/retro/vaporwave.glb')
-  const actions = useAnimations(animations, group)
+  const { ref, clips } = useAnimations(animations, group)
   let mixer;
 
   useEffect(() => {
-    mixer = new THREE.AnimationMixer(actions.ref.current)
+    mixer = new THREE.AnimationMixer(ref.current)
 
-    actions.clips.forEach((clip) => {
+    clips.forEach((clip) => {
       const action = mixer.clipAction(clip)
       action.play()
     })
 
-  }, [])
+  }, [clips, ref])
 
 
   useFrame((state, delta) => {
@@ -124,7 +124,7 @@ export function Vaporwave(props) {
               <group name="Sphere_0" rotation={[-Math.PI / 2, 0, 0]} scale={67.966}>
                 <mesh name="Object_4" geometry={nodes.Object_4.geometry} material={materials.Material_3}  >
                   <sphereGeometry args={[1, 36, 36]} />
-                  <colorShiftMaterial ref={ref} side={THREE.DoubleSide} />
+                  <colorShiftMaterial ref={refe} side={THREE.DoubleSide} />
                 </mesh>
               </group>
               <group name="Roundcube003_3">
