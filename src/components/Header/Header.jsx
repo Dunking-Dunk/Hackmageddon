@@ -14,7 +14,7 @@ export default function Header({ onSectionChange }) {
     const helperFunction = () => {
         setState((state) => !state)
     }
- console.log(state)
+
     const variant = {
         hidden: {
             left: '-100%'
@@ -32,9 +32,9 @@ export default function Header({ onSectionChange }) {
         <div className='navbar'>
             <div className="navbar__container" >
                 <div className="menu" onClick={helperFunction}>
-                <span className='menu__line' style={{transform: state && 'rotate(45deg)', top: state && 3}}></span>
-                <span className='menu__line' style={{width: state && '0px'}}></span>
-                <span className='menu__line' style={{transform: state && 'rotate(-45deg)', top: state && 0}}></span>
+                    <span className='menu__line' style={{ transform: state && 'rotate(45deg)', top: state && 3 }}></span>
+                    <span className='menu__line' style={{ width: state && '0px' }}></span>
+                    <span className='menu__line' style={{ transform: state && 'rotate(-45deg)', top: state && 0 }}></span>
                 </div>
                 <div className="navbar__logo__container">
                     <div className="navbar__logo">
@@ -43,7 +43,7 @@ export default function Header({ onSectionChange }) {
                 </div>
                 <motion.div layout className="navbar__link__container" ref={containerRef} variants={variant} animate={state ? 'show' : 'hidden'}>
                     <ul className="link__container__items">
-                        <li className="mobile__container">   
+                        <li className="mobile__container">
                             <div className="navbar__logo">
                                 <img className="navbar__logo__img" src={logo} alt='picture of the person' />
                             </div>
@@ -58,7 +58,7 @@ export default function Header({ onSectionChange }) {
                             <a className='link__item__link' onClick={() => onSectionChange(4)}>Team</a></li>
                         <li className="link__container__item">
                             <a className='link__item__link' onClick={() => onSectionChange(6)}>Gallery</a></li>
-                            <li className="link__container__item">
+                        <li className="link__container__item">
                             <a className='link__item__link' href='mailto:Innoventzz@gmail.com'>Contact</a></li>
                     </ul>
                 </motion.div>

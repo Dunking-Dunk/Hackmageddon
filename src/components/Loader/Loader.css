@@ -12,6 +12,7 @@
     opacity: 1;
     transition: 2s ease;
     background-color: var(--background-color);
+
 }
 
 .loader__title {

@@ -18,7 +18,6 @@ const Home = () => {
 
     return (
         <div className='home' >
-            {/* <BackgroundCanvas /> */}
             <HeroCanvas navigate={navigate} />
             {/* <Hero />
             <About />
@@ -26,9 +25,8 @@ const Home = () => {
             <Marque />
             <Team />
             <Gallery />
-            <Contact />
-             */}
-             
+            <Contact /> */}
+
         </div >
     )
 }

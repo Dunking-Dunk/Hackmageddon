@@ -33,7 +33,7 @@ export const Plane = () => {
     varying vec2 vUv;
 
       vec2 cubic(vec2 p) {
-        return p * p * (3.0 - 2.0 * p);
+        return p * p * (3.0 - 2.0 * p); 
       }
       
       vec2 quintic(vec2 p) {
