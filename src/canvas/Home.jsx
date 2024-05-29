@@ -7,6 +7,7 @@ import { EffectComposer, Noise, Glitch, Selection, ChromaticAberration } from '@
 import { BlendFunction } from 'postprocessing'
 import { Vaporwave } from './Vaporwave';
 import { RetroSpaceShipModel } from './Retro_dark_space_ship';
+import useDeviceDetection from '../hooks/useDeviceDetection';
 
 
 function FaceModel(props) {
@@ -124,6 +125,7 @@ useGLTF.preload('./face2/scene.gltf')
 
 
 const HomeCanvas = () => {
+    const device = useDeviceDetection()
 
     return (
         <div style={{ width: '100%', height: '100%', position: 'fixed', zIndex: 0 }}>
@@ -142,7 +144,7 @@ const HomeCanvas = () => {
                                 offset={[0.001, 0.001]} />
                         </EffectComposer>
                         <RetroSpaceShipModel position={[-32, -8, 0]} scale={[1, 1, 1]} rotation={[0, - Math.PI / 2, 0]} />
-                        <Vaporwave position={[-4, -22, 0]} rotation={[0, Math.PI / 2, 0]} />
+                        <Vaporwave position={device === 'Desktop' ? [-4, -22, 0] : [-36, -28, 0]} rotation={[0, Math.PI / 2, 0]} />
                     </Selection>
                 </Suspense>
                 <Leva hidden />
