@@ -1,0 +1,32 @@
+.real_container{
+    margin:6rem 0 2rem 0;
+}
+.icon_1{
+    height:100px;
+}
+.inner_text h2{
+    margin-top: 1rem;
+    
+}
+.dates{
+    font-weight: 500;
+    font-size: larger;
+}
+/* .pixel-borders(
+    corner-size: 1,                 
+    border-size: 4px,              
+    border-color: #000,            
+    border-inset-color: false
+  );
+   pixel-box(
+    corner-size,
+    border-size, 
+    background-color,              
+    border-color: false,           
+    border-inset: true,            
+    border-inset-size: false,      
+    border-inset-color: false,     
+    border-inset-sides: false,
+    border-inset-color-br: false,
+    border-inset-color-tl: false
+  ); */
