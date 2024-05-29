@@ -5,6 +5,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import { Balloon, Sprite, Button, Container } from "nes-react";
 import { FaGraduationCap } from 'react-icons/fa';
 import {ReactComponent as Logo} from './computer.svg'
+
 // import "/path/to/pixel-borders.scss";
 import './Timeline.css'
 function Timeline() {
@@ -89,7 +90,19 @@ function Timeline() {
         
         
       </VerticalTimeline>
-      <Heading size='large' centered>Grid layouts with &lt;Row&gt; and &lt;Col&gt;</Heading>
+      <VerticalTimelineElement className='icon_1'
+         
+         iconStyle={{background:"#000",color:"#fff"}}
+         date='2005'
+        
+         >
+              <div className='inner_text'>
+                <h2>HURSUN</h2>
+                <h2>Software developer</h2>
+            </div>
+         
+         </VerticalTimelineElement>
+      {/* <Heading size='large' centered>Grid layouts with &lt;Row&gt; and &lt;Col&gt;</Heading> */}
 
 <Row>
   <Col type='1-of-2'>
