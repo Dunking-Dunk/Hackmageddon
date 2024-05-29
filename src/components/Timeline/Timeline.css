@@ -1,17 +1,29 @@
-.real_container{
-    margin:6rem 0 2rem 0;
+.timeline_container {
+    margin: 6rem 0 2rem 0;
 }
-.icon_1{
-    height:100px;
+
+.timeline__title {
+    background: #8A2387;
+    background: -webkit-linear-gradient(to bottom, #F27121, #E94057, #8A2387);
+    background: linear-gradient(to bottom, #F27121, #E94057, #8A2387);
+    font-size: 3rem;
+    font-weight: 600;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
-.inner_text h2{
-    margin-top: 1rem;
-    
+
+.timeline__para {
+    font-size: 2rem;
+    color: var(--background-color);
+    font-weight: 400;
 }
-.dates{
-    font-weight: 500;
-    font-size: larger;
+
+.timeline__line::before {
+    background: -webkit-linear-gradient(to bottom, #F27121, #E94057, #8A2387);
 }
+
+
 /* .pixel-borders(
     corner-size: 1,                 
     border-size: 4px,              

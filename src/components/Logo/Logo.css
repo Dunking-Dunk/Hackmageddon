@@ -3,11 +3,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Adjust based on your layout */
+    /* Adjust based on your layout */
 }
 
 .logo-image {
-    width: 80%; /* Adjust the size as needed */
+    width: 80%;
+    /* Adjust the size as needed */
     animation: hover-up-down 3s ease-in-out infinite;
 }
 
@@ -15,9 +16,12 @@
     0% {
         transform: translateY(0);
     }
+
     50% {
-        transform: translateY(-20px); /* Adjust the height of the hover effect */
+        transform: translateY(-20px);
+        /* Adjust the height of the hover effect */
     }
+
     100% {
         transform: translateY(0);
     }

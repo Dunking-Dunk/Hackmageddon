@@ -1,7 +1,7 @@
 import React from "react";
 import Styled from 'styled-components';
 import { AiOutlineArrowRight } from 'react-icons/ai';
-import logo from "../../assets/logo.png";
+import logo from "../../assets/images/hmgtext.png";
 import instagramIcon from "../../assets/images/nav-icon3.svg";
 
 const Footer = () => {
@@ -14,14 +14,13 @@ const Footer = () => {
                     </a>
                 </LogoContainer>
                 <SocialContainer>
-                    {/* <Title>Let's Connect</Title> */}
                     <LinkList><a href="https://www.instagram.com/innoventzz_rec/"><img src={instagramIcon} alt="Instagram" /></a></LinkList>
                 </SocialContainer>
             </LinkContainer>
             <BottomContainer>
-                <Para>Innoventz © 2024. All Rights Reserved</Para>
+                <Para>Hackmageddon © 2024. All Rights Reserved</Para>
             </BottomContainer>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+            {/* <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                 <LogoContainer>
                     <p>Website Developed By</p>
                 </LogoContainer>
@@ -29,7 +28,7 @@ const Footer = () => {
                     <LinkList><a href="https://www.linkedin.com/in/hursun-ss-377659233/">Hursun</a></LinkList>
                     <LinkList><a href="https://www.linkedin.com/in/prajeinck/">Prajein</a></LinkList>
                 </SocialContainer>
-            </div>
+            </div> */}
         </Container>
     )
 }
@@ -61,7 +60,7 @@ const LinkContainer = Styled.div`
 
 const LogoContainer = Styled.div`
     img {
-        width: 150px; /* Increase the size of the main logo */
+        width: 300px; /* Increase the size of the main logo */
         height: auto;
     }
 `
@@ -89,8 +88,8 @@ const Para = Styled.p`
 
 const LinkList = Styled.div`
 img {
-    width:8rem;
-    height: 8rem;
+    width:4rem;
+    height: 4rem;
 }
     a{
         color: white;

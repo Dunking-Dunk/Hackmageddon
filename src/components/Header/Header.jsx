@@ -1,11 +1,7 @@
 import './Header.css'
 import { useEffect, useRef, useState } from 'react'
-import { RxHamburgerMenu } from 'react-icons/rx'
-import { AiOutlineClose } from 'react-icons/ai'
-import { Link } from 'react-router-dom'
-import logo from '../../assets/logo.png'
+import logo from '../../assets/images/hmgtext.png'
 import { motion, transform } from 'framer-motion'
-import { IoClose } from "react-icons/io5";
 
 export default function Header({ onSectionChange }) {
     const containerRef = useRef()

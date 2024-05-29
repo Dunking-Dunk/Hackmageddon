@@ -5,8 +5,9 @@ import { Preload, shaderMaterial, useGLTF, useScroll, Float, } from "@react-thre
 import { Leva, useControls } from 'leva'
 import { EffectComposer, Noise, Glitch, Selection, ChromaticAberration } from '@react-three/postprocessing'
 import { BlendFunction } from 'postprocessing'
-
 import { Vaporwave } from './Vaporwave';
+import { RetroSpaceShipModel } from './Retro_dark_space_ship';
+
 
 function FaceModel(props) {
     const { totalHeight } = props
@@ -125,7 +126,7 @@ useGLTF.preload('./face2/scene.gltf')
 const HomeCanvas = () => {
 
     return (
-        <div style={{ width: '100%', height: '100dvh', position: 'fixed', zIndex: 0 }}>
+        <div style={{ width: '100%', height: '100%', position: 'fixed', zIndex: 0 }}>
             <Canvas
                 gl={{ preserveDrawingBuffer: true, antialias: true }}
                 frameloop='always'
@@ -135,13 +136,13 @@ const HomeCanvas = () => {
                 <ambientLight intensity={5} />
                 <Suspense>
                     <Selection autoClear={false}>
-
                         <EffectComposer disableNormalPass multisampling={1} >
                             <Noise opacity={0.1} />
                             <ChromaticAberration blendFunction={BlendFunction.NORMAL}
-                                offset={[0.009, 0.001]} />
+                                offset={[0.001, 0.001]} />
                         </EffectComposer>
-                        <Vaporwave />
+                        <RetroSpaceShipModel position={[-32, -8, 0]} scale={[1, 1, 1]} rotation={[0, - Math.PI / 2, 0]} />
+                        <Vaporwave position={[-4, -22, 0]} rotation={[0, Math.PI / 2, 0]} />
                     </Selection>
                 </Suspense>
                 <Leva hidden />

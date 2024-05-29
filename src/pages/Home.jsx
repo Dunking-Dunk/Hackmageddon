@@ -10,8 +10,8 @@ import Header from '../components/Header/Header';
 import Gallery from '../components/Gallery/Gallery'
 import Contact from '../components/Contact/Contact'
 import Footer from '../components/Footer/Footer'
-import HeroCanvas from '../canvas/Home';
 import Timeline from '../components/Timeline/Timeline';
+import { StarField } from 'retro-react';
 
 const Home = () => {
     const navigate = useNavigate()
@@ -19,14 +19,18 @@ const Home = () => {
     return (
         <div className='home' >
             <Header />
-            <HeroCanvas navigate={navigate} />
+
+            <StarField
+                numStars={100}
+                size={2}
+                speed={1}
+                starColor="white"
+                style={{ zIndex: -1, position: 'fixed' }}
+            />
             <div style={{ position: 'relative' }}>
                 <Hero />
                 <About />
-                <Event />
-                <Timeline/>
-                <Marque />
-                <Team />
+
                 <Contact />
                 <Footer />
             </div>

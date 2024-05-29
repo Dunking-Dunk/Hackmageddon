@@ -3,7 +3,6 @@ import React from "react";
 import Carousel from '../Carousel/Carousel'
 import { fadeIn } from '../../utils/motion';
 import { motion } from 'framer-motion'
-import sectionWrapper from '../../utils/sectionWrapper'
 
 import slide_image_1 from '../../assets/images/event posters/TECHLOCK HOLMES.webp';
 import slide_image_2 from '../../assets/images/event posters/AI ALCHEMY.webp';

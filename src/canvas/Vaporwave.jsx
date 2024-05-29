@@ -3,6 +3,7 @@ import { useGLTF, useAnimations, shaderMaterial } from '@react-three/drei'
 import { useFrame, extend } from '@react-three/fiber'
 import * as THREE from 'three'
 import { useControls } from 'leva'
+import { RetroSpaceShipModel } from './Retro_dark_space_ship';
 
 
 export function Vaporwave(props) {
@@ -116,16 +117,16 @@ export function Vaporwave(props) {
 
   return (
 
-    <group ref={group} {...props} position={[0, -22, 0]} dispose={null} rotation={[0, Math.PI / 2, 0]}>
+    <group ref={group} {...props} dispose={null}>
       <group name="Sketchfab_Scene">
         <group name="Sketchfab_model" rotation={[-1.736, 0, 0]}>
           <group name="root">
             <group name="GLTF_SceneRootNode" rotation={[Math.PI / 2, 0, 0]}>
               <group name="Sphere_0" rotation={[-Math.PI / 2, 0, 0]} scale={67.966}>
-                <mesh name="Object_4" geometry={nodes.Object_4.geometry} material={materials.Material_3}  >
+                {/* <mesh name="Object_4" geometry={nodes.Object_4.geometry} material={materials.Material_3}  >
                   <sphereGeometry args={[1, 36, 36]} />
                   <colorShiftMaterial ref={refe} side={THREE.DoubleSide} />
-                </mesh>
+                </mesh> */}
               </group>
               <group name="Roundcube003_3">
                 <mesh name="Object_6" geometry={nodes.Object_6.geometry} material={materials.Black} />
@@ -140,14 +141,13 @@ export function Vaporwave(props) {
                 <mesh name="Object_13" geometry={nodes.Object_13.geometry} material={materials.Black} />
                 <mesh name="Object_14" geometry={nodes.Object_14.geometry} material={materials.Material_4} />
               </group>
-              <group name="Sun001_6" position={[0, 9.313, -32.091]} rotation={[Math.PI / 2, 0, 0]} scale={13.11}>
-                <mesh name="Object_16" geometry={nodes.Object_16.geometry} material={materials['Sun.001']} />
-              </group>
+
             </group>
           </group>
         </group>
       </group>
     </group>
+
   )
 }
 

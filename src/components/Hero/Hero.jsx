@@ -2,13 +2,9 @@ import './Hero.css';
 import React, { useRef } from "react";
 import CountdownTimer from '../CountDown/CountdownTimer';
 import Button from '../Button/Button';
-import { StarField } from 'retro-react';
-import { motion } from 'framer-motion';
-import { zoomIn } from '../../utils/motion';
-import sectionWrapper from '../../utils/sectionWrapper';
+import HeroCanvas from '../../canvas/Home'
 
 const Hero = () => {
-    const titleRef = useRef();
 
     const handleRegisterClick = () => {
         // Navigate to google.com
@@ -17,13 +13,17 @@ const Hero = () => {
 
     return (
         <div className="hero" id='hero'>
+            <HeroCanvas />
             <div className="hero__container">
                 <div className="hero__lines"></div>
-                <h1 className="hero__h1">
-                    <span>HACKMAGEDDON</span>
-                    <span>HACKMAGEDDON</span>
-                </h1>
-                <h2 className="hero__h2">Chapter 1</h2>
+                <div className='hero__sub'>
+                    <h1 className="hero__title">
+                        <span>HACKMAGEDDON</span>
+                        <span>HACKMAGEDDON</span>
+                    </h1>
+                    <h2 className="hero__h2">Chapter 1</h2>
+                </div>
+
 
                 <Button onClick={handleRegisterClick}>Register</Button>
             </div>
@@ -31,4 +31,4 @@ const Hero = () => {
     );
 };
 
-export default sectionWrapper(Hero, "about");
+export default Hero
