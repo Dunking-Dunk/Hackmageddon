@@ -17,7 +17,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; /* Place it behind the other content */
+  z-index: -1;
+  /* Place it behind the other content */
 }
 
 .hero__container {
@@ -41,8 +42,8 @@
 
 @media screen and (max-width: 750px) {
   .hero__title {
-      font-family: 'Monoton';
-      font-size: 7.5rem;
+    font-family: 'Monoton';
+    font-size: 7.5rem;
   }
 }
 
@@ -52,7 +53,7 @@
 .hero__lines {
   color: #59c1fe;
   position: fixed;
-  width: 100vw;
+  width: 100%;
   height: 5em;
   background: linear-gradient(rgba(89, 193, 254, 0.2) 20%, #59c1fe 40%, #59c1fe 60%, rgba(89, 193, 254, 0.2) 80%);
   background-size: 1px 0.5em;
@@ -79,8 +80,8 @@
   width: 0.4em;
   height: 0.4em;
   background: radial-gradient(white 3%, rgba(255, 255, 255, 0.3) 15%, rgba(255, 255, 255, 0.05) 60%, transparent 80%),
-              radial-gradient(rgba(255, 255, 255, 0.2) 50%, transparent 60%) 50% 50% / 5% 100%,
-              radial-gradient(rgba(255, 255, 255, 0.2) 50%, transparent 60%) 50% 50% / 70% 5%;
+    radial-gradient(rgba(255, 255, 255, 0.2) 50%, transparent 60%) 50% 50% / 5% 100%,
+    radial-gradient(rgba(255, 255, 255, 0.2) 50%, transparent 60%) 50% 50% / 70% 5%;
   background-repeat: no-repeat;
 }
 
