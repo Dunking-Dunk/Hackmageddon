@@ -11,7 +11,7 @@ import Gallery from '../components/Gallery/Gallery'
 import Contact from '../components/Contact/Contact'
 import Footer from '../components/Footer/Footer'
 import HeroCanvas from '../canvas/Home';
-
+import Timeline from '../components/Timeline/Timeline';
 
 const Home = () => {
     const navigate = useNavigate()
@@ -24,6 +24,7 @@ const Home = () => {
                 <Hero />
                 <About />
                 <Event />
+                <Timeline/>
                 <Marque />
                 <Team />
                 <Contact />
