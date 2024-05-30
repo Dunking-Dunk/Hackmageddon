@@ -1,8 +1,8 @@
 import './Hero.css';
 import React, { useRef } from "react";
-import CountdownTimer from '../CountDown/CountdownTimer';
-import Button from '../Button/Button';
-import HeroCanvas from '../../canvas/Home'
+// import CountdownTimer from '../../CountDown/CountdownTimer';
+import Button from '../../Button/Button';
+import HeroCanvas from '../../../canvas/Home'
 
 const Hero = () => {
 

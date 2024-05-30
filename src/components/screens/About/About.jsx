@@ -1,18 +1,18 @@
 import './About.css'
 import React from "react";
-import logo from '../../assets/images/hmgtext.png';
-import { textVariant, slideIn } from '../../utils/motion';
+import logo from '../../../assets/images/hmgtext.png';
+import { textVariant, slideIn } from '../../../utils/motion';
 import { motion } from 'framer-motion'
-import Logo from '../Logo/Logo';
-import { Meteors } from '../ui/meteors';
+import Logo from '../../Logo/Logo';
+import { Meteors } from '../../ui/meteors';
 
 const About = () => {
     return (
         <div className='about' id='about'>
             <div className='about__container'>
+                <Meteors number={50} />
                 <div className='about__card'>
                     <div className='about__card__img__container'>
-                        <Meteors number={20} />
                         <Logo />
                     </div>
 

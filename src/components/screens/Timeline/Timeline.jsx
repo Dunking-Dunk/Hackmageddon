@@ -11,11 +11,12 @@ import logo3 from './message.svg';
 
 function Timeline() {
   return (
-    <div className='timeline__container' >
+    <div className='timeline__container flex flex-col gap-10 px-4' >
+      <h3 className='text-9xl'>Timeline</h3>
       <VerticalTimeline lineColor='linear-gradient(to top, #8A2387, #E94057, #8A2387)' >
-        <VerticalTimelineElement style={{marginTop:"-2rem"}}className='timeline__line'
-          iconStyle={{ background: "##EEF7FF",color:"#fff"}}
-          date='2005' 
+        <VerticalTimelineElement style={{ marginTop: "-2rem" }} className='timeline__line'
+          iconStyle={{ background: "##EEF7FF", color: "#fff" }}
+          date='2005'
           icon={<img className="timeline__logo__image" src={logo1}></img>}>
           <div>
           </div>
@@ -25,7 +26,7 @@ function Timeline() {
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement className='timeline__line'
-         iconStyle={{ background: "#EEF7FF", color: "#fff" }}
+          iconStyle={{ background: "#EEF7FF", color: "#fff" }}
           date='2005'
           icon={<img className='timeline__logo__image' src={logo2}></img>}
         >
@@ -36,7 +37,7 @@ function Timeline() {
 
         </VerticalTimelineElement>
         <VerticalTimelineElement className='timeline__line'
-         iconStyle={{ background: "#EEF7FF", color: "#fff" }}
+          iconStyle={{ background: "#EEF7FF", color: "#fff" }}
           date='2005'
           icon={<img className='timeline__logo__image' src={logo3}></img>}
         >
@@ -81,7 +82,7 @@ function Timeline() {
 
         </VerticalTimelineElement>
         <VerticalTimelineElement className='timeline__line'
-          style={{marginBottom:"-8rem"}}
+          style={{ marginBottom: "-8rem" }}
           iconStyle={{ background: "#EEF7FF", color: "#fff" }}
           date='2005'
           icon={<img className="timeline__logo__image" src={logo1}></img>}

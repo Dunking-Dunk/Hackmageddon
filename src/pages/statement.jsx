@@ -2,8 +2,7 @@ import './statement.css'
 import React from "react";
 import { useNavigate, useParams, Link } from 'react-router-dom';
 import { StarField } from 'retro-react';
-import Table from '../components/Table/table'
-import { Meteors } from '../components/ui/meteors'
+import Table from '../components/ui/Table/table'
 
 const Statement = () => {
     const { id } = useParams()
@@ -20,8 +19,7 @@ const Statement = () => {
 
             <div className='statement__container'>
                 <h1 className='text-7xl'>Problem Statements</h1>
-                {/* <Table /> */}
-                <Meteors number={20} />
+                <Table />
             </div>
 
             <Link className='statement__back__container' to={'/'}>
