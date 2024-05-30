@@ -23,8 +23,6 @@ const Hero = () => {
                     </h1>
                     <h2 className="hero__h2">Chapter 1</h2>
                 </div>
-
-
                 <Button onClick={handleRegisterClick}>Register</Button>
             </div>
         </div>

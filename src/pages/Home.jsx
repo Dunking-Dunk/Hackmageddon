@@ -32,6 +32,7 @@ const Home = () => {
                     style={{ zIndex: -1, position: 'absolute' }}
                 />
                 <About />
+                <Timeline/>
                 <Themes />
                 <Contact />
                 <Footer />
