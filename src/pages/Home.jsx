@@ -14,6 +14,7 @@ import Timeline from '../components/screens/Timeline/Timeline';
 import { StarField } from 'retro-react';
 import Background from '../canvas/Background';
 import Themes from '../components/screens/Themes/Themes';
+import Faq from '../components/screens/Faq/Faq'
 
 const Home = () => {
     const navigate = useNavigate()
@@ -34,6 +35,7 @@ const Home = () => {
                 <About />
                 <Timeline />
                 <Themes />
+                <Faq />
                 <Contact />
                 <Footer />
             </div>

@@ -11,7 +11,7 @@ import logo3 from './message.svg';
 
 function Timeline() {
   return (
-    <div className='timeline__container flex flex-col gap-10 px-4' >
+    <div className='timeline__container flex flex-col gap-10 px-20' >
       <h3 className='text-9xl'>Timeline</h3>
       <VerticalTimeline lineColor='linear-gradient(to top, #8A2387, #E94057, #8A2387)' >
         <VerticalTimelineElement style={{ marginTop: "-2rem" }} className='timeline__line'
