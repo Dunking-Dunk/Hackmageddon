@@ -30,7 +30,7 @@ const Home = () => {
             <div style={{ position: 'relative' }}>
                 <Hero />
                 <About />
-
+                <Timeline/>
                 <Contact />
                 <Footer />
             </div>
