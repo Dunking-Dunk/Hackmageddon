@@ -12,6 +12,7 @@ import Contact from '../components/Contact/Contact'
 import Footer from '../components/Footer/Footer'
 import Timeline from '../components/Timeline/Timeline';
 import { StarField } from 'retro-react';
+import Themes from '../components/Themes/Themes';
 
 const Home = () => {
     const navigate = useNavigate()
@@ -30,7 +31,7 @@ const Home = () => {
             <div style={{ position: 'relative' }}>
                 <Hero />
                 <About />
-
+                <Themes />
                 <Contact />
                 <Footer />
             </div>
