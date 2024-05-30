@@ -21,7 +21,7 @@ export function RetroSpaceShipModel(props) {
       const x = ((e.clientX / window.innerWidth) - 0.5) * 10
       const y = ((e.clientY / window.innerHeight) - 0.5) * 10
 
-      ref.current.position.set(-32, -8 + Math.max(y, -0.5), x)
+      ref.current.position.set(-32, -8 + (props.limitBottom ? Math.max(y, -0.5) : y), x)
     }
 
     window.addEventListener('mousemove', handleMouseMove)

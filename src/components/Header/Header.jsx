@@ -1,9 +1,10 @@
 import './Header.css'
 import { useEffect, useRef, useState } from 'react'
 import logo from '../../assets/images/hmgtext.png'
-import { motion, transform } from 'framer-motion'
+import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
-export default function Header({ onSectionChange }) {
+export default function Header() {
     const containerRef = useRef()
     const [state, setState] = useState(false)
 
@@ -45,15 +46,13 @@ export default function Header({ onSectionChange }) {
                             </div>
                         </li>
                         <li className="link__container__item">
-                            <a className='link__item__link' onClick={() => onSectionChange(0)} >Home</a></li>
+                            <Link className='link__item__link' to='/statement'>Statements</Link>
+                        </li>
                         <li className="link__container__item">
-                            <a className='link__item__link' onClick={() => onSectionChange(1)}>About</a></li>
-                        <li className="link__container__item" >
-                            <a className='link__item__link' onClick={() => onSectionChange(2)}>Events</a></li>
+                            <a className='link__item__link' href='#about'>About</a></li>
                         <li className="link__container__item">
-                            <a className='link__item__link' onClick={() => onSectionChange(4)}>Team</a></li>
-                        <li className="link__container__item">
-                            <a className='link__item__link' onClick={() => onSectionChange(6)}>Gallery</a></li>
+                            <a className='link__item__link' href=''>Team</a>
+                        </li>
                         <li className="link__container__item">
                             <a className='link__item__link' href='mailto:Innoventzz@gmail.com'>Contact</a></li>
                     </ul>
