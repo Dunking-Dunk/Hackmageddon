@@ -12,6 +12,8 @@ import Contact from '../components/Contact/Contact'
 import Footer from '../components/Footer/Footer'
 import Timeline from '../components/Timeline/Timeline';
 import { StarField } from 'retro-react';
+import Background from '../canvas/Background';
+import Themes from '../components/Themes/Themes';
 
 const Home = () => {
     const navigate = useNavigate()
@@ -19,18 +21,19 @@ const Home = () => {
     return (
         <div className='home' >
             <Header />
-
-            <StarField
-                numStars={100}
-                size={2}
-                speed={1}
-                starColor="white"
-                style={{ zIndex: -1, position: 'fixed' }}
-            />
+            <Background />
+            <Hero />
             <div style={{ position: 'relative' }}>
-                <Hero />
+                <StarField
+                    numStars={100}
+                    size={2}
+                    speed={1}
+                    starColor="white"
+                    style={{ zIndex: -1, position: 'absolute' }}
+                />
                 <About />
                 <Timeline/>
+                <Themes />
                 <Contact />
                 <Footer />
             </div>

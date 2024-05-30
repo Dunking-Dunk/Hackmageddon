@@ -7,7 +7,8 @@ import { EffectComposer, Noise, Glitch, Selection, ChromaticAberration } from '@
 import { BlendFunction } from 'postprocessing'
 import { Vaporwave } from './Vaporwave';
 import { RetroSpaceShipModel } from './Retro_dark_space_ship';
-
+import useDeviceDetection from '../hooks/useDeviceDetection';
+import { StarField } from 'retro-react';
 
 function FaceModel(props) {
     const { totalHeight } = props
@@ -124,15 +125,24 @@ useGLTF.preload('./face2/scene.gltf')
 
 
 const HomeCanvas = () => {
+    const device = useDeviceDetection()
 
     return (
-        <div style={{ width: '100%', height: '100%', position: 'fixed', zIndex: 0 }}>
+        <div style={{ width: '100%', height: '100%', position: 'absolute', zIndex: 0 }}>
+            <StarField
+                numStars={1000}
+                size={2}
+                speed={1}
+                starColor="white"
+                style={{ position: 'absolute' }}
+            />
             <Canvas
                 gl={{ preserveDrawingBuffer: true, antialias: true }}
                 frameloop='always'
                 dpr={[1, 1.5]}
                 camera={{ position: [15, 2, 0], fov: 25 }}
             >
+
                 <ambientLight intensity={5} />
                 <Suspense>
                     <Selection autoClear={false}>
@@ -141,8 +151,8 @@ const HomeCanvas = () => {
                             <ChromaticAberration blendFunction={BlendFunction.NORMAL}
                                 offset={[0.001, 0.001]} />
                         </EffectComposer>
-                        <RetroSpaceShipModel position={[-32, -8, 0]} scale={[1, 1, 1]} rotation={[0, - Math.PI / 2, 0]} />
-                        <Vaporwave position={[-4, -22, 0]} rotation={[0, Math.PI / 2, 0]} />
+                        <RetroSpaceShipModel position={[-32, -8, 0]} scale={[1, 1, 1]} rotation={[0, - Math.PI / 2, 0]} limitBottom={true} />
+                        <Vaporwave position={device === 'Desktop' ? [-4, -22, 0] : [-36, -28, 0]} rotation={[0, Math.PI / 2, 0]} />
                     </Selection>
                 </Suspense>
                 <Leva hidden />
