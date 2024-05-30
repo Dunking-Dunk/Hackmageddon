@@ -2,7 +2,7 @@ import './statement.css'
 import React from "react";
 import { useNavigate, useParams, Link } from 'react-router-dom';
 import { StarField } from 'retro-react';
-import Table from '../components/Table/table'
+import Table from '../components/ui/Table/table'
 
 const Statement = () => {
     const { id } = useParams()

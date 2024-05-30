@@ -13,7 +13,7 @@ import Footer from '../components/Footer/Footer'
 import Timeline from '../components/screens/Timeline/Timeline';
 import { StarField } from 'retro-react';
 import Background from '../canvas/Background';
-import Themes from '../components/Themes/Themes';
+import Themes from '../components/screens/Themes/Themes';
 
 const Home = () => {
     const navigate = useNavigate()
