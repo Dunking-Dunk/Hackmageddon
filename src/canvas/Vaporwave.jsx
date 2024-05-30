@@ -130,8 +130,12 @@ export function Vaporwave(props) {
               </group>
               <group name="Roundcube003_3">
                 <mesh name="Object_6" geometry={nodes.Object_6.geometry} material={materials.Black} />
-                <mesh name="Object_7" geometry={nodes.Object_7.geometry} material={materials.Material_2} />
-                <mesh name="Object_8" geometry={nodes.Object_8.geometry} material={materials.Material_2} />
+                <mesh name="Object_7" geometry={nodes.Object_7.geometry} material={materials.Material_2} >
+                  <meshBasicMaterial color={'red'} />
+                </mesh>
+                <mesh name="Object_8" geometry={nodes.Object_8.geometry} material={materials.Material_2} >
+                  <meshBasicMaterial color={'red'} />
+                </mesh>
               </group>
               <group name="Roundcube004_4">
                 <mesh name="Object_10" geometry={nodes.Object_10.geometry} material={materials.Black} />

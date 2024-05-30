@@ -3,6 +3,7 @@
     height: 100%;
     padding: 20rem 10rem;
     position: relative;
+    overflow: hidden;
 }
 
 .about__container {
