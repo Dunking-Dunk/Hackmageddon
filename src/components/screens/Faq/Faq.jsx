@@ -20,17 +20,30 @@ const data = {
             title: "What is the package version",
             content: "v1.0.5"
         }],
-    styles: {
-        bgColor: 'black',
-    }
+
 }
 
-export default class App extends Component {
-    render() {
-        return (
-            <div>
-                <Faq data={data} />
-            </div>
-        )
-    }
+const styles = {
+    bgColor: 'transparent',
+    titleTextColor: 'white',
+    rowContentColor: 'white',
+    rowTitleColor: 'white',
+    arrowColor: 'white',
+    titleTextSize: '10rem'
 }
+const config = {
+    animate: true,
+    arrowIcon: "V",
+    tabFocus: true
+};
+
+
+const FaqScreen = () => {
+    return (
+        <div className='lg:p-24 px-20'>
+            <Faq data={data} styles={styles} config={config} />
+        </div>
+    )
+}
+
+export default FaqScreen
