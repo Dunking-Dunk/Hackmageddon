@@ -1,6 +1,7 @@
 import React from "react";
 import './Themes.css'
 
+import { GiConvergenceTarget } from "react-icons/gi";
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "../../ui/canvas-reveal-effect";
 
@@ -77,13 +78,12 @@ const Card = ({
         <div
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
-            className="border border-white/[0.4] group/canvas-card flex items-center justify-center  lg:max-w-xl w-full mx-auto p-4 relative  lg:h-[40rem] h-[50rem] rounded-xl"
+            className="border border-white/[0.4] group/canvas-card flex items-center justify-center  lg:max-w-xl w-full mx-auto p-4 relative lg:h-[40rem] h-[50rem] rounded-xl"
         >
-            <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
-            <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
-
+            <Icon className="absolute h-6 w-6 -top-3 -left-3 text-white " />
+            <Icon className="absolute h-6 w-6 -bottom-3 -left-3 text-white " />
+            <Icon className="absolute h-6 w-6 -top-3 -right-3 text-white " />
+            <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white " />
             <AnimatePresence>
                 {hovered && (
                     <motion.div
@@ -116,7 +116,7 @@ const AceternityIcon = () => {
             viewBox="0 0 66 65"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="h-10 w-10 text-black dark:text-white group-hover/canvas-card:text-white "
+            className="h-10 w-10 text-white group-hover/canvas-card:text-white "
         >
             <path
                 d="M8 8.05571C8 8.05571 54.9009 18.1782 57.8687 30.062C60.8365 41.9458 9.05432 57.4696 9.05432 57.4696"
