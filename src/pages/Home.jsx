@@ -17,6 +17,7 @@ import Themes from '../components/screens/Themes/Themes';
 import Faq from '../components/screens/Faq/Faq'
 import Prices from '../components/screens/Prices/Prices';
 import Rules from '../components/screens/Rules/Rules';
+import Statements from '../components/screens/Statements/Statements';
 
 const Home = () => {
     const navigate = useNavigate()
@@ -37,6 +38,7 @@ const Home = () => {
                 <About />
                 <Marque />
                 <Themes />
+                <Statements />
                 <Rules />
                 <Prices />
                 <Timeline />

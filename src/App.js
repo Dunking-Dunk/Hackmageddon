@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomeScreen from './pages/Home'
 import StatementScreen from './pages/statement'
 import GalleryScreen from './pages/Gallery'
-import RulesScreen from './pages/Rules_data'
+import RulesScreen from './pages/Rules'
 
 function App() {
   return (
