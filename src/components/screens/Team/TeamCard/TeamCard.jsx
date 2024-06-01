@@ -2,7 +2,7 @@ import './TeamCard.css'
 import React from 'react'
 
 
-const Card = ({ name, designation, image }) => {
+const Card = ({ name, designation, image, phone }) => {
     return (
         <div class="team__card">
             <img
@@ -13,6 +13,10 @@ const Card = ({ name, designation, image }) => {
             <div>
                 <h3 className='team__card__name'>{name}</h3>
                 <p class="team__card__footer">{designation}</p>
+                {phone &&
+                    <p class="team__card__footer font-sans">{phone}</p>
+                }
+
             </div>
 
         </div>

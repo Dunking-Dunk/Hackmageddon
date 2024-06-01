@@ -46,15 +46,18 @@ export default function Header() {
                             </div>
                         </li>
                         <li className="link__container__item">
+                            <a className='link__item__link' href='#about'>About</a></li>
+                        <li className="link__container__item">
+                            <a className='link__item__link' href='#team'>Team</a>
+                        </li>
+                        <li className="link__container__item">
                             <Link className='link__item__link' to='/statement'>Statements</Link>
                         </li>
                         <li className="link__container__item">
-                            <Link className='link__item__link' to='/Rules'>Rules</Link>
+                            <a className='link__item__link' href='#rule'>Rules</a>
                         </li>
                         <li className="link__container__item">
-                            <a className='link__item__link' href='#about'>About</a></li>
-                        <li className="link__container__item">
-                            <a className='link__item__link' href=''>Team</a>
+                            <a className='link__item__link' href='#timeline'>Timeline</a>
                         </li>
                         <li className="link__container__item">
                             <a className='link__item__link' href='mailto:Innoventzz@gmail.com'>Contact</a>

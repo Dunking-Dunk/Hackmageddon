@@ -17,7 +17,7 @@ function App({ elements }) {
                 effect={'coverflow'}
                 grabCursor={true}
                 centeredSlides={true}
-                slidesPerView={'auto'}
+                slidesPerView={'3'}
                 coverflowEffect={{
                     rotate: 50,
                     stretch: 0,
@@ -28,6 +28,7 @@ function App({ elements }) {
                 pagination={true}
                 modules={[EffectCoverflow, Pagination]}
                 className="mySwiper"
+
             >
                 {elements?.map((ele, key) => {
                     return <SwiperSlide key={key}>
