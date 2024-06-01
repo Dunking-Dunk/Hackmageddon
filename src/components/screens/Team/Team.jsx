@@ -17,8 +17,8 @@ const Team = () => {
     ]
 
     const faculty_coordinator = [
-        <Card name='Dr Kumar P' designation='Director of CIS' image={Kumar} />,
-        <Card name='Dr Rakesh kumar M' designation='Organizer' image={Rakesh} phone={'9840627292'} />
+        <Card name='Dr Kumar P' designation='Director-Computing and Information Science' image={Kumar} />,
+        <Card name='Dr Rakesh kumar M' designation='Faculty Coordinator' image={Rakesh} phone={'9840627292'} />
     ]
 
     return (
