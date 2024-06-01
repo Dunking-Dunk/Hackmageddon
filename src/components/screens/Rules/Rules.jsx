@@ -23,7 +23,7 @@ const Rules = () => {
                     <h3 className="text-9xl">Rules and Regulation</h3>
                     <p className="text-2xl w-2/3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi eligendi porro neque odio, perspiciatis minima eaque dolor quidem quae sint dolorum, assumenda aliquam, explicabo maiores delectus suscipit officia eveniet quo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi eligendi porro neque odio, perspiciatis minima eaque dolor quidem quae sint dolorum, assumenda aliquam, explicabo maiores delectus suscipit officia eveniet quo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi eligendi porro neque odio, perspiciatis minima eaque dolor quidem quae sint dolorum, assumenda aliquam, explicabo maiores delectus suscipit officia eveniet quo!</p>
                     <Button onClick={() => {
-                        navigate('/rule')
+                        navigate('/Rules')
                     }}>Rules </Button>
                 </div>
 
