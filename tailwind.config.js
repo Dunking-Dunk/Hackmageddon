@@ -17,6 +17,7 @@ module.exports = {
     extend: {
       animation: {
         "meteor-effect": "meteor 5s linear infinite",
+        "shoot-effect": "shoot 5s linear infinite",
         shimmer: "shimmer 2s linear infinite"
       },
       keyframes: {
@@ -25,6 +26,14 @@ module.exports = {
           "70%": { opacity: "1" },
           "100%": {
             transform: "rotate(215deg) translateX(-1000px)",
+            opacity: "0",
+          },
+        },
+        shoot: {
+          "0%": { transform: "rotate(270deg) translateX(0)", opacity: "1" },
+          "70%": { opacity: "1" },
+          "100%": {
+            transform: "rotate(270deg) translateX(-1000px)",
             opacity: "0",
           },
         },
