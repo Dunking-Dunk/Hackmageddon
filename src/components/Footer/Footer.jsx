@@ -14,7 +14,7 @@ const Footer = () => {
                     </a>
                 </LogoContainer>
                 <SocialContainer>
-                    <LinkList><a href="https://www.instagram.com/innoventzz_rec/"><img src={instagramIcon} alt="Instagram" /></a></LinkList>
+                    <LinkList><a href="https://www.instagram.com/hackmageddon/"><img src={instagramIcon} alt="Instagram" /></a></LinkList>
                 </SocialContainer>
             </LinkContainer>
             <BottomContainer>
