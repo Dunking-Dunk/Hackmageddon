@@ -15,7 +15,6 @@ const About = () => {
                     <div className='about__card__img__container'>
                         <Logo />
                     </div>
-
                     <div className='about__card__sub'>
                         <img src={logo} className='about__card__img' />
                         <motion.p className='about__card__para' variants={textVariant()}>

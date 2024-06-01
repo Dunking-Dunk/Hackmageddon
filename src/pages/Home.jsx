@@ -16,6 +16,7 @@ import Background from '../canvas/Background';
 import Themes from '../components/screens/Themes/Themes';
 import Faq from '../components/screens/Faq/Faq'
 import Prices from '../components/screens/Prices/Prices';
+import Rules from '../components/screens/Rules/Rules';
 
 const Home = () => {
     const navigate = useNavigate()
@@ -36,6 +37,7 @@ const Home = () => {
                 <About />
                 <Marque />
                 <Themes />
+                <Rules />
                 <Prices />
                 <Timeline />
                 <Faq />

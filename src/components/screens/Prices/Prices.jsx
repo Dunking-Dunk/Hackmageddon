@@ -1,13 +1,18 @@
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "../../ui/3d-card";
 import GoldTrophy from '../../../assets/images/icons/goldCup.svg'
+import { Vortex } from "../../ui/vortex";
 
 const Prices = () => {
     return (
-        <div className="w-full h-full lg:p-40 px-8 py-20">
+        <div className="w-full h-full lg:px-40 px-8 py-20 overflow-hidden">
             <h3 className="text-9xl">Prize Pool</h3>
-            <div className="w-full h-full flex lg:flex-row flex-col items-center justify-evenly">
-                {/* <CardContainer className="inter-var ">
+            <Vortex
+                backgroundColor="transparent"
+                className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full"
+            >
+                <div className="w-full h-full flex lg:flex-row flex-col items-center justify-evenly">
+                    {/* <CardContainer className="inter-var ">
                     <CardBody className=" relative group/card  hover:shadow-2xl hover:shadow-emerald-500/[0.1] border-white/[0.2] lg:w-[40rem]
                      w-[80%] h-auto rounded-xl p-24 border flex flex-col items-center gap-8  backdrop-blur-lg
                     ">
@@ -31,31 +36,33 @@ const Prices = () => {
                         </div>
                     </CardBody>
                 </CardContainer> */}
-                <CardContainer className="inter-var">
-                    <CardBody className=" relative group/card  hover:shadow-2xl hover:shadow-emerald-500/[0.1] border-white/[0.2] lg:w-[50rem]
+
+
+                    <CardContainer className="inter-var">
+                        <CardBody className=" relative group/card  hover:shadow-2xl hover:shadow-emerald-500/[0.1] border-white/[0.2] lg:w-[50rem]
                     w-[80%] h-auto rounded-xl p-24 border flex flex-col items-center gap-8  backdrop-blur-lg
                     ">
-                        <CardItem
-                            translateZ="50"
-                            className="text-8xl font-bold text-white"
-                        >
-                            Prize Pool
-                        </CardItem>
-                        <CardItem translateZ="100" className="w-[70%] mt-4">
-                            <img src={GoldTrophy} className="h-50" />
-                        </CardItem>
-                        <div className="flex justify-between items-center mt-20">
                             <CardItem
-                                as="p"
-                                translateZ="60"
-                                className="text-5xl max-w-sm mt-2 text-neutral-300"
+                                translateZ="50"
+                                className="text-8xl font-bold text-white"
                             >
-                                ₹ 30,000 +
+                                Prize Pool
                             </CardItem>
-                        </div>
-                    </CardBody>
-                </CardContainer>
-                {/* <CardContainer className="inter-var">
+                            <CardItem translateZ="100" className="w-[70%] mt-4">
+                                <img src={GoldTrophy} className="h-50" />
+                            </CardItem>
+                            <div className="flex justify-between items-center mt-20">
+                                <CardItem
+                                    as="p"
+                                    translateZ="60"
+                                    className="text-5xl max-w-sm mt-2 text-neutral-300"
+                                >
+                                    ₹ 30,000 +
+                                </CardItem>
+                            </div>
+                        </CardBody>
+                    </CardContainer>
+                    {/* <CardContainer className="inter-var">
                     <CardBody className=" relative group/card  hover:shadow-2xl hover:shadow-emerald-500/[0.1] border-white/[0.2] lg:w-[40rem]  w-[80%] h-auto rounded-xl p-24 border flex flex-col items-center gap-8 backdrop-blur-lg">
                         <CardItem
                             translateZ="50"
@@ -76,8 +83,11 @@ const Prices = () => {
                             </CardItem>
                         </div>
                     </CardBody>
-                </CardContainer> */}
-            </div>
+                </CardContainer> */
+                    }
+                </div>
+            </Vortex>
+
         </div>
     )
 }

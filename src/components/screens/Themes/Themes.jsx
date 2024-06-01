@@ -7,6 +7,7 @@ import { CanvasRevealEffect } from "../../ui/canvas-reveal-effect";
 export default function Theme() {
     return (
         <div className="flex flex-col lg:p-40 px-8 py-40 gap-20">
+
             <h3 className="text-9xl">Problem Themes</h3>
             <div className="flex flex-wrap items-center justify-center w-full lg:gap-y-20 gap-4 mx-auto">
 
