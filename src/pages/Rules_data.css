@@ -1,0 +1,14 @@
+.Rules{
+    width: 100%;
+    min-height: 100dvh;
+    position: relative;
+}
+.Rules__back__container{
+    position: fixed;
+    left: 5rem;
+    top: 5rem;
+    width: 5rem;
+    height: 5rem;
+    z-index: 10;
+    cursor: pointer;
+}

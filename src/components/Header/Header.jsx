@@ -54,7 +54,11 @@ export default function Header() {
                             <a className='link__item__link' href=''>Team</a>
                         </li>
                         <li className="link__container__item">
-                            <a className='link__item__link' href='mailto:Innoventzz@gmail.com'>Contact</a></li>
+                            <a className='link__item__link' href='mailto:Innoventzz@gmail.com'>Contact</a>
+                        </li>
+                        {/* <li className="link__container__item">
+                            <a className='link__item__link' href='/Rules'>Rules</a>
+                        </li> */}
                     </ul>
                 </motion.div>
             </div>
