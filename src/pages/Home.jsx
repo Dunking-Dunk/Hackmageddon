@@ -36,8 +36,8 @@ const Home = () => {
                 <About />
                 <Marque />
                 <Themes />
-                <Timeline />
                 <Prices />
+                <Timeline />
                 <Faq />
                 <Contact />
                 <Footer />
