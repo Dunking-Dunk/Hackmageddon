@@ -55,18 +55,20 @@
     outline: none;
     transition: 1s ease-in-out;
     position: relative;
+
+    svg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        fill: none;
+        stroke: var(--accent-color);
+        stroke-dasharray: 150 480;
+        stroke-dashoffset: 150;
+        transition: 1s ease-in-out;
+    }
+
 }
 
-svg {
-    position: absolute;
-    left: 0;
-    top: 0;
-    fill: none;
-    stroke: var(--accent-color);
-    stroke-dasharray: 150 480;
-    stroke-dashoffset: 150;
-    transition: 1s ease-in-out;
-}
 
 .main__button:hover {
     animation: wiggle 0.4s;

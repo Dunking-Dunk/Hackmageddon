@@ -1,7 +1,6 @@
 import React from "react";
 import './Themes.css'
 
-import { GiConvergenceTarget } from "react-icons/gi";
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "../../ui/canvas-reveal-effect";
 
@@ -28,7 +27,7 @@ export default function Theme() {
                         dotSize={2}
                     />
                     {/* Radial gradient for the cute fade */}
-                    <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
+                    <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/20 dark:bg-black/90" />
                 </Card>
                 <Card title="Culture, Education, and Tourism" icon={<AceternityIcon />}>
                     <CanvasRevealEffect
@@ -54,7 +53,7 @@ export default function Theme() {
                         dotSize={2}
                     />
                     {/* Radial gradient for the cute fade */}
-                    <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
+                    <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/20 dark:bg-black/90" />
                 </Card>
                 <Card title="Disaster Management & Space Technology" icon={<AceternityIcon />}>
                     <CanvasRevealEffect
@@ -120,7 +119,7 @@ const AceternityIcon = () => {
         >
             <path
                 d="M8 8.05571C8 8.05571 54.9009 18.1782 57.8687 30.062C60.8365 41.9458 9.05432 57.4696 9.05432 57.4696"
-                stroke="currentColor"
+                stroke="white"
                 strokeWidth="15"
                 strokeMiterlimit="3.86874"
                 strokeLinecap="round"
@@ -137,7 +136,7 @@ export const Icon = ({ className, ...rest }) => {
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth="1.5"
-            stroke="currentColor"
+            stroke="white"
             className={className}
             {...rest}
         >

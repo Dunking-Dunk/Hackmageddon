@@ -1,10 +1,8 @@
 .timeline_container {
     margin: 6rem 0 2rem 0;
-    
-    
 }
+
 .timeline__title {
-    
     background: #8A2387;
     background: -webkit-linear-gradient(to bottom, #F27121, #E94057, #8A2387);
     background: linear-gradient(to bottom, #F27121, #E94057, #8A2387);
@@ -14,14 +12,16 @@
     -webkit-background-clip: text;
     background-clip: text;
 }
+
 .vertical-timeline-element-content {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
-    border:1px solid rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
+
 .vertical-timeline-element-icon {
     position: absolute;
     top: 0;
@@ -31,35 +31,39 @@
     height: 40px;
     border-radius: 50%;
     box-shadow: none;
-   
+
 }
+
 .timeline__para {
-  
     margin-top: 1rem;
     padding-bottom: 1rem;
     font-size: 15px;
     color: var(--background-color);
-    color:#fff;
+    color: #fff;
     font-weight: 400;
-    font-family:  'VT323',monospace;
+    font-family: 'VT323', monospace;
 }
+
 .timeline__line::before {
     background: -webkit-linear-gradient(to bottom, #F27121, #E94057, #8A2387);
 }
-.timeline__line{
-    height:250px;
-    
+
+.timeline__line {
+    height: 250px;
+
 }
-.timeline__inner_text{
-    height:100%;
-    font-family: 'VT323',monospace;
-   
+
+.timeline__inner_text {
+    height: 100%;
+    font-family: 'VT323', monospace;
+
 }
-.timeline__logo__image{
-    width:80%;
-    height:80%;
+
+.timeline__logo__image {
+    width: 80%;
+    height: 80%;
     padding-left: 10px;
     padding-top: 10px;
-   
-   
+
+
 }

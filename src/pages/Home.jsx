@@ -15,6 +15,7 @@ import { StarField } from 'retro-react';
 import Background from '../canvas/Background';
 import Themes from '../components/screens/Themes/Themes';
 import Faq from '../components/screens/Faq/Faq'
+import Prices from '../components/screens/Prices/Prices';
 
 const Home = () => {
     const navigate = useNavigate()
@@ -24,7 +25,7 @@ const Home = () => {
             <Header />
             <Background />
             <Hero />
-            <div style={{ position: 'relative' }}>
+            <div className='relative'>
                 <StarField
                     numStars={100}
                     size={2}
@@ -34,8 +35,9 @@ const Home = () => {
                 />
                 <About />
                 <Marque />
-                <Timeline />
                 <Themes />
+                <Timeline />
+                <Prices />
                 <Faq />
                 <Contact />
                 <Footer />
