@@ -1,6 +1,8 @@
 import React from 'react';
 import { StarField } from 'retro-react';
 import { Link } from 'react-router-dom';
+import { Meteors } from '../components/ui/meteors'
+import { WavyBackground } from '../components/ui/wavy-background';
 
 const rules = [
   "Team Size: Each team must consist of 5 members.",
@@ -20,27 +22,28 @@ const rules = [
 
 const Rules = () => {
   return (
-    <div className='w-full h-screen relative'>
+    <div className='w-full h-full min-h-screen relative overflow-x-hidden'>
       <StarField
         numStars={100}
         size={2}
         speed={1}
         starColor="white"
-        style={{ zIndex: -1, position: 'absolute' }}
+        style={{ zIndex: -1, position: 'absolute', bottom: 0, top: 0, height: '100%', width: '100%' }}
       />
-      <Link className='absolute left-24 top-24' to={'/'}>
+      <Meteors number={200} className={'z-[-1]'} />
+      <Link className='absolute left-24 top-24 z-50' to={'/'}>
         <span className='menu__line' style={{ transform: 'rotate(45deg)', top: 2 }}></span>
         <span className='menu__line' style={{ transform: 'rotate(-45deg)', top: 0 }}></span>
       </Link>
-
-      <div className='rules-container absolute top-32 left-32'>
-        <h1 className='text-2xl font-bold mb-4'>Hackathon Rules</h1>
-        <ul className='list-disc pl-5'>
+      <div className='h-full w-full lg:p-40 px-6 py-40'>
+        <h1 className='text-9xl font-bold mb-8'>Hackathon Rules</h1>
+        <ul className='list-disc pl-14'>
           {rules.map((rule, index) => (
-            <li key={index} className='mb-2'>{rule}</li>
+            <li key={index} className='mb-6 lg:text-3xl text-5xl '>{rule}</li>
           ))}
         </ul>
       </div>
+
     </div>
   );
 }

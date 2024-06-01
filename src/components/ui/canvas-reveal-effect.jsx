@@ -12,8 +12,8 @@ export const CanvasRevealEffect = ({
     showGradient = true,
 }) => {
     return (
-        <div className={cn("h-full relative bg-white w-full", containerClassName)}>
-            <div className="h-full w-full">
+        <div className={cn("h-full  relative bg-white w-full", containerClassName)}>
+            <div className="h-full w-full absolute">
                 <DotMatrix
                     colors={colors ?? [[0, 255, 255]]}
                     dotSize={dotSize ?? 3}
@@ -235,7 +235,7 @@ const ShaderMaterial = ({
         float x = position.x;
         float y = position.y;
         gl_Position = vec4(x, y, 0.0, 1.0);
-        fragCoord = (position.xy + vec2(1.0)) * 0.5 * u_resolution;
+        fragCoord = (position.xy + vec2(1.0)) *  0.5 * u_resolution ;
         fragCoord.y = u_resolution.y - fragCoord.y;
       }
       `,

@@ -20,7 +20,14 @@
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+
 }
+
+.vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
+    font-size: 4rem;
+}
+
 
 .vertical-timeline-element-icon {
     position: absolute;
@@ -31,13 +38,14 @@
     height: 40px;
     border-radius: 50%;
     box-shadow: none;
-
 }
+
+
 
 .timeline__para {
     margin-top: 1rem;
     padding-bottom: 1rem;
-    font-size: 15px;
+    font-size: 2rem;
     color: var(--background-color);
     color: #fff;
     font-weight: 400;
@@ -64,6 +72,16 @@
     height: 80%;
     padding-left: 10px;
     padding-top: 10px;
+}
 
+@media screen and (max-width: 768px) {
+    .timeline__para {
+        font-size: 2.5rem;
+    }
 
+    .vertical-timeline-element-content {
+        .vertical-timeline-element-date {
+            font-size: 4rem;
+        }
+    }
 }

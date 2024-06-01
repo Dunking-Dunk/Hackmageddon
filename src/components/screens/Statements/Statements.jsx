@@ -15,9 +15,9 @@ const Statements = () => {
                 >
                     <div className="flex flex-col gap-10 lg:p-40 py-40 px-6 lg:backdrop-blur-0 backdrop-blur-sm">
                         <h3 className="text-9xl">Problem Staments</h3>
-                        <p className="text-3xl lg:w-1/2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi eligendi porro neque odio, perspiciatis minima eaque dolor quidem quae sint dolorum, assumenda aliquam, explicabo maiores delectus suscipit officia eveniet quo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi eligendi porro neque odio, perspiciatis minima eaque dolor quidem quae sint dolorum, assumenda aliquam, explicabo maiores delectus suscipit officia eveniet quo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi eligendi porro neque odio, perspiciatis minima eaque dolor quidem quae sint dolorum, assumenda aliquam, explicabo maiores delectus suscipit officia eveniet quo!</p>
+                        <p className="text-3xl lg:w-1/2">Here you will find a diverse range of around 120 problem statements aligned with our event's themes. Participants are encouraged to explore and engage with these challenges, and you are welcome to submit multiple solutions. Dive in, innovate, and showcase your skills by addressing these exciting problems. Happy hacking!</p>
                         <Button onClick={() => {
-                            navigate('/statements')
+                            navigate('/statement')
                         }}>Statements</Button>
                     </div>
                 </Vortex>

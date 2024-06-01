@@ -5,12 +5,12 @@ const data = {
     title: "FAQ (How it works)",
     rows: [
         {
-            title: "Lorem ipsum dolor sit amet,",
-            content: "Lorem ipsum dolor sit amet, consectetur "
+            title: "How do I register for the hackathon?",
+            content: "Registration can be completed online through the official hackathon website. Ensure you provide all necessary team member details and meet the eligibility criteria."
         },
         {
-            title: "Nunc maximus, magna at ultricies elementum",
-            content: "Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam."
+            title: "What is the maximum team size, and are there any specific requirements?",
+            content: "Each team must consist of 5 members, with at least one female member."
         },
         {
             title: "Curabitur laoreet, mauris vel blandit fringilla",

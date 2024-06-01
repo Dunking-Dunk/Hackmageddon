@@ -49,6 +49,9 @@ export default function Header() {
                             <Link className='link__item__link' to='/statement'>Statements</Link>
                         </li>
                         <li className="link__container__item">
+                            <Link className='link__item__link' to='/Rules'>Rules</Link>
+                        </li>
+                        <li className="link__container__item">
                             <a className='link__item__link' href='#about'>About</a></li>
                         <li className="link__container__item">
                             <a className='link__item__link' href=''>Team</a>
