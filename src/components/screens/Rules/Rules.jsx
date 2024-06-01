@@ -37,10 +37,10 @@ const Rules = () => {
                 />
                 <div className="px-10 py-20 flex flex-col gap-10">
                     <h3 className="text-9xl">Rules and Regulation</h3>
-                    <p className="text-3xl lg:w-2/3">This is the rules and regulations page for Hackmagaddon! It is crucial that all participants adhere to the guidelines outlined here to ensure a fair, enjoyable, and productive experience for everyone involved. By participating in this event, you agree to follow these rules strictly. Please remember that the judges' decisions are final and binding in all matters related to the competition. Thank you for your cooperation and commitment to maintaining the integrity of Hackamagaddeon.</p>
+                    <p className="lg:text-3xl text-5xl lg:w-2/3 leading-normal">This is the rules and regulations page for Hackmagaddon! It is crucial that all participants adhere to the guidelines outlined here to ensure a fair, enjoyable, and productive experience for everyone involved. By participating in this event, you agree to follow these rules strictly. Please remember that the judges' decisions are final and binding in all matters related to the competition. Thank you for your cooperation and commitment to maintaining the integrity of Hackamagaddeon.</p>
                     <ul className='list-disc pl-14'>
                         {rules.map((rule, index) => (
-                            <li key={index} className='mb-6 lg:text-3xl text-5xl '>{rule}</li>
+                            <li key={index} className='mb-6 lg:text-3xl text-5xl leading-normal'>{rule}</li>
                         ))}
                     </ul>
                     {/* <Button onClick={() => {

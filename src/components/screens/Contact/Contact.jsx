@@ -14,7 +14,7 @@ const Contact = () => {
                         <span>    Any Query ?</span>
                     </h1>
                     <Button onClick={() => {
-                        window.location.href = "mailto:hackmageddon@rajalakshmi.edu.in";
+                        window.location.href = "hackmageddon@rajalakshmi.edu.in";
                     }}>Mail</Button>
                 </div>
             </div>

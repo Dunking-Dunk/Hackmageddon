@@ -3,6 +3,12 @@ import './Themes.css'
 
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "../../ui/canvas-reveal-effect";
+import { MdHealthAndSafety } from "react-icons/md";
+import { RiRobot2Line } from "react-icons/ri";
+import { FaBook } from "react-icons/fa";
+import { MdAgriculture } from "react-icons/md";
+import { FaSpaceAwesome } from "react-icons/fa6";
+import { MdOutlineSecurity } from "react-icons/md";
 
 export default function Theme() {
     return (
@@ -11,13 +17,13 @@ export default function Theme() {
             <h3 className="text-9xl">Problem Themes</h3>
             <div className="flex flex-wrap items-center justify-center w-full lg:gap-y-20 gap-4 mx-auto">
 
-                <Card title="Smart Technology & Automation" icon={<AceternityIcon />}>
+                <Card title="Smart Technology & Automation" icon={<RiRobot2Line size={100} />}>
                     <CanvasRevealEffect
                         animationSpeed={5.1}
                         containerClassName="bg-emerald-900"
                     />
                 </Card>
-                <Card title="Health and Well-being" icon={<AceternityIcon />}>
+                <Card title="Health and Well-being" icon={<MdHealthAndSafety size={100} />}>
                     <CanvasRevealEffect
                         animationSpeed={3}
                         containerClassName="bg-black"
@@ -30,20 +36,20 @@ export default function Theme() {
                     {/* Radial gradient for the cute fade */}
                     <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/20 dark:bg-black/90" />
                 </Card>
-                <Card title="Culture, Education, and Tourism" icon={<AceternityIcon />}>
+                <Card title="Culture, Education, and Tourism" icon={<FaBook size={100} />}>
                     <CanvasRevealEffect
                         animationSpeed={3}
                         containerClassName="bg-sky-600"
                         colors={[[125, 211, 252]]}
                     />
                 </Card>
-                <Card title="Agriculture and Sustainability" icon={<AceternityIcon />}>
+                <Card title="Agriculture and Sustainability" icon={<MdAgriculture size={100} />}>
                     <CanvasRevealEffect
                         animationSpeed={5.1}
                         containerClassName="bg-emerald-900"
                     />
                 </Card>
-                <Card title="Cybersecurity, & DeFi" icon={<AceternityIcon />}>
+                <Card title="Cybersecurity, & DeFi" icon={<MdOutlineSecurity size={100} />}>
                     <CanvasRevealEffect
                         animationSpeed={3}
                         containerClassName="bg-black"
@@ -56,7 +62,7 @@ export default function Theme() {
                     {/* Radial gradient for the cute fade */}
                     <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/20 dark:bg-black/90" />
                 </Card>
-                <Card title="Disaster Management & Space Technology" icon={<AceternityIcon />}>
+                <Card title="Disaster Management & Space Technology" icon={<FaSpaceAwesome size={100} />}>
                     <CanvasRevealEffect
                         animationSpeed={3}
                         containerClassName="bg-sky-600"
@@ -100,7 +106,7 @@ const Card = ({
                 <div className="text-center group-hover/canvas-card:-translate-y-4 group-hover/canvas-card:opacity-0 transition duration-200 w-full  mx-auto flex items-center justify-center">
                     {icon}
                 </div>
-                <h2 className="text-white text-4xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200 text-center">
+                <h2 className="text-white lg:text-4xl text-6xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200 text-center">
                     {title}
                 </h2>
             </div>

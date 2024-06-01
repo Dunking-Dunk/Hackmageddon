@@ -17,11 +17,13 @@ import Faq from '../components/screens/Faq/Faq'
 import Prices from '../components/screens/Prices/Prices';
 import Rules from '../components/screens/Rules/Rules';
 import Statements from '../components/screens/Statements/Statements';
+import Loader from '../components/Loader/Loader'
 
 const Home = () => {
 
     return (
         <div className='home' >
+            {/* <Loader /> */}
             <Header />
             <Background />
             <Hero />
@@ -34,7 +36,7 @@ const Home = () => {
                     style={{ zIndex: -1, position: 'absolute' }}
                 />
                 <About />
-                <Marque />
+                {/* <Marque /> */}
                 <Themes />
                 <Statements />
                 <Rules />
@@ -48,5 +50,6 @@ const Home = () => {
 
         </div >
     )
+
 }
 export default Home

@@ -65,6 +65,7 @@
 @media screen and (max-width: 750px) {
     .team__card {
         margin: 2rem;
+        width: 300px;
     }
 
     .team__card__name {

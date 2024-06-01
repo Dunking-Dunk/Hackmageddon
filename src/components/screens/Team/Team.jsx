@@ -13,12 +13,12 @@ const Team = () => {
 
     const coordinator = [
         <Card name='Hursun S S' designation='Coordinator' image={Hursun} phone={'8056201341'} />,
-        <Card name='Keerthana M G' designation='Coordinator' image={Keerthana} phone={'9445087093'} />, <Card name='Prajein C K' designation='Coordinator' image={Prajein} phone={'7200246022'} />,
+        <Card name='Keerthana M G' designation='Coordinator' image={Keerthana} phone={'9445087093'} />, <Card name='Prajein C K' designation='Coordinator' image={Prajein} phone={'7200246022'} />
     ]
 
     const faculty_coordinator = [
         <Card name='Dr Kumar P' designation='Director of CIS' image={Kumar} />,
-        <Card name='Dr Rakesh kumar M' designation='Organizer' image={Rakesh} phone={'9840627292'} />,
+        <Card name='Dr Rakesh kumar M' designation='Organizer' image={Rakesh} phone={'9840627292'} />
     ]
 
     return (

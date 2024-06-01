@@ -8,7 +8,7 @@ const Hero = () => {
 
     const handleRegisterClick = () => {
         // Navigate to google.com
-        window.location.href = 'https://forms.gle/WXgsuPiG1TwSzpHX9';
+        // window.location.href = 'https://forms.gle/WXgsuPiG1TwSzpHX9';
     };
 
     return (
@@ -23,7 +23,7 @@ const Hero = () => {
                     </h1>
                     <h2 className="hero__h2">Chapter 1</h2>
                 </div>
-                <Button onClick={handleRegisterClick}>Register</Button>
+                <Button onClick={handleRegisterClick}>Register Coming soon</Button>
             </div>
         </div>
     );

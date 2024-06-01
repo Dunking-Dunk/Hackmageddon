@@ -20,15 +20,16 @@ const Footer = () => {
             <BottomContainer>
                 <Para>Hackmageddon © 2024. All Rights Reserved</Para>
             </BottomContainer>
-            {/* <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                 <LogoContainer>
-                    <p>Website Developed By</p>
+                    <p className="text-5xl">Website Developed By</p>
                 </LogoContainer>
                 <SocialContainer>
                     <LinkList><a href="https://www.linkedin.com/in/hursun-ss-377659233/">Hursun</a></LinkList>
                     <LinkList><a href="https://www.linkedin.com/in/prajeinck/">Prajein</a></LinkList>
+                    <LinkList><a href="https://www.linkedin.com/in/fazil-s-498944257/">Fazil</a></LinkList>
                 </SocialContainer>
-            </div> */}
+            </div>
         </Container>
     )
 }
@@ -90,6 +91,7 @@ const LinkList = Styled.div`
 img {
     width:4rem;
     height: 4rem;
+    font-size: 4rem
 }
     a{
         color: white;

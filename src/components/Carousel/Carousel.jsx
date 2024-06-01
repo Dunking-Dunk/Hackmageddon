@@ -6,29 +6,28 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import useDeviceDetections from '../../hooks/useDeviceDetection'
 
 
-import { Pagination, EffectCoverflow } from 'swiper/modules';
+import { Pagination, EffectCoverflow, Navigation } from 'swiper/modules';
 
 function App({ elements }) {
+    const device = useDeviceDetections();
+
     return (
         <div className="swiper">
             <Swiper
                 effect={'coverflow'}
                 grabCursor={true}
-                centeredSlides={true}
-                slidesPerView={'3'}
-                coverflowEffect={{
-                    rotate: 50,
-                    stretch: 0,
-                    depth: 100,
-                    modifier: 1,
-                    slideShadows: true,
+                slidesPerView={'auto'}
+                pagination={{ el: '.swiper-pagination', clickable: true }}
+                navigation={{
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                    clickable: true,
                 }}
-                pagination={true}
-                modules={[EffectCoverflow, Pagination]}
-                className="mySwiper"
-
+                modules={[EffectCoverflow, Pagination, Navigation]}
+                className="swiper_container"
             >
                 {elements?.map((ele, key) => {
                     return <SwiperSlide key={key}>
