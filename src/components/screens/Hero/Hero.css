@@ -101,3 +101,39 @@
     top: 30%;
   }
 }
+
+.hero__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 4rem;
+  gap: 2rem; 
+}
+
+.hero__button-left,
+.hero__button-right {
+  flex: none;
+}
+
+.hero__button-left {
+  margin-right: 1rem; 
+}
+
+.hero__button-right {
+  margin-left: 1rem; 
+}
+
+@media screen and (max-width: 750px) {
+  .hero__buttons {
+    flex-direction: column;
+    gap: 1rem; /* Adjust this value to control the vertical distance between the buttons */
+    padding: 0; /* Remove padding when stacked vertically */
+    bottom: 2rem; /* Adjust bottom spacing if necessary */
+  }
+
+  .hero__button-left,
+  .hero__button-right {
+    margin: 0; /* Reset margins for mobile */
+  }
+}
