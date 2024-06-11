@@ -7,8 +7,7 @@ import HeroCanvas from '../../../canvas/Home'
 const Hero = () => {
 
     const handleRegisterClick = () => {
-        // Navigate to google.com
-        // window.location.href = 'https://forms.gle/WXgsuPiG1TwSzpHX9';
+        window.location.href = 'https://forms.gle/17EJgWDmXRJztH996';
     };
 
     return (
@@ -23,7 +22,7 @@ const Hero = () => {
                     </h1>
                     <h2 className="hero__h2">Chapter 1</h2>
                 </div>
-                <Button onClick={handleRegisterClick}>Register Coming soon</Button>
+                <Button onClick={handleRegisterClick}>Register Now</Button>
             </div>
         </div>
     );

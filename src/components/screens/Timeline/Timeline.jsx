@@ -37,17 +37,7 @@ function Timeline() {
           </div>
 
         </VerticalTimelineElement>
-        <VerticalTimelineElement className='timeline__line'
-          iconStyle={{ background: "#fff", color: "#fff" }}
-          date='Last few weeks of July'
-          icon={<img className="timeline__logo__image" src={logo3}></img>}
-        >
-          <div className='timeline__inner_text'>
-            <h3 className='timeline__title'>SECOND ROUND</h3>
-            <h4 className='timeline__para'>Shortlisted teams from the first round must submit a 90-second video presenting their project idea by July 28. These videos will be evaluated based on clarity, presentation skills, and the potential impact of the idea. The top 30 teams will be announced on the first week of August, advancing to the grand finale.</h4>
-          </div>
 
-        </VerticalTimelineElement>
         <VerticalTimelineElement className='timeline__line'
           style={{ marginBottom: "-8rem" }}
           iconStyle={{ background: "#fff", color: "#fff" }}

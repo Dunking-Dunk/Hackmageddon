@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react'
 import logo from '../../assets/images/hmgtext.png'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
+import statement from '../../assets/final ps.pdf'
 
 export default function Header() {
     const containerRef = useRef()
@@ -46,9 +47,12 @@ export default function Header() {
                             </div>
                         </li>
                         <li className="link__container__item">
+                            <a className='link__item__link' href='https://forms.gle/17EJgWDmXRJztH996'>Register</a></li>
+                        <li className="link__container__item">
                             <a className='link__item__link' href='#about'>About</a></li>
                         <li className="link__container__item">
-                            <Link className='link__item__link' to='/statement'>Statements</Link>
+                            {/* <Link className='link__item__link' to='/statement'>Statements</Link> */}
+                            <a href={statement} className='link__item__link' download={statement}> Statements</a>
                         </li>
                         <li className="link__container__item">
                             <a className='link__item__link' href='#rule'>Rules</a>
