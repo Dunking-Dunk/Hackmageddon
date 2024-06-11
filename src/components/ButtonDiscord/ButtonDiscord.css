@@ -3,51 +3,57 @@
         -webkit-transform: skewX(24deg);
         filter: hue-rotate(0deg);
     }
+
     10% {
         -webkit-transform: skewX(-8deg);
     }
+
     20% {
         -webkit-transform: skewX(55deg);
     }
+
     30% {
         -webkit-transform: skewX(-90deg);
     }
+
     40% {
         -webkit-transform: skewX(29deg);
     }
+
     50% {
         -webkit-transform: skewX(-90deg);
     }
+
     60% {
         -webkit-transform: skewX(3deg);
     }
+
     70% {
         -webkit-transform: skewX(-2deg);
     }
+
     80% {
         -webkit-transform: skewX(1deg);
     }
+
     90% {
         -webkit-transform: skewX(10deg);
     }
+
     100% {
         -webkit-transform: skewX(0deg);
         filter: hue-rotate(360deg);
     }
 }
 
-.main__button {
+.main__buttonD{
     width: 180px;
     height: 60px;
     cursor: pointer;
-    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-    backdrop-filter: blur(10px); /* Blur effect */
-    -webkit-backdrop-filter: blur(10px); /* For Safari */
-    border: 0.5px solid var(--primary-color);
+    background: #5865F2;
     outline: none;
     transition: 1s ease-in-out;
     position: relative;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 
     svg {
         position: absolute;
@@ -59,18 +65,20 @@
         stroke-dashoffset: 150;
         transition: 1s ease-in-out;
     }
+
 }
 
-.main__button:hover {
+
+.main__buttonD:hover {
     animation: wiggle 0.4s;
     transition: 1s ease-in-out;
 }
 
-.main__button:hover svg {
+.main__buttonD:hover svg {
     stroke-dashoffset: -480;
 }
 
-.main__button span {
+.main__buttonD span {
     color: white;
     font-size: 18px;
     font-weight: 100;

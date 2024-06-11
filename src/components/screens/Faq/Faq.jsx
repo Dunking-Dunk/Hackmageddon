@@ -17,10 +17,6 @@ const data = {
             content: "No, there isn’t any entry fee for the hackathon. Registration is completely free."
         },
         {
-            title: "Are there any specific themes or problem statements for the hackathon?",
-            content: "Yes, problem statements will be released on June 15, and projects should adhere to these themes."
-        },
-        {
             title: "What if we need to change a team member after registration?",
             content: "You can make changes to your team by contacting the organizers. Please do this as soon as possible to avoid any issues."
         },
