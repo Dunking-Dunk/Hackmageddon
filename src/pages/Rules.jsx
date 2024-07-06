@@ -2,7 +2,6 @@ import React from 'react';
 import { StarField } from 'retro-react';
 import { Link } from 'react-router-dom';
 import { Meteors } from '../components/ui/meteors'
-import { WavyBackground } from '../components/ui/wavy-background';
 
 const rules = [
   "Team Size: Each team must consist of 5 members.",
@@ -20,6 +19,7 @@ const rules = [
 ];
 
 const Rules = () => {
+
   return (
     <div className='w-full h-full min-h-screen relative overflow-x-hidden'>
       <StarField

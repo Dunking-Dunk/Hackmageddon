@@ -13,7 +13,6 @@ const rules = [
     "Theme: Projects should adhere to the theme provided at the start of the hackathon.",
     "Technology Stack: Teams are free to use any programming languages, frameworks, or tools.",
     "PPT Submission: Teams must submit a PowerPoint presentation (maximum of 4 slides) detailing their project idea by July 14.",
-    "Video Submission: Shortlisted teams must submit a 90-second video presenting their project idea by [submission deadline].",
     "Evaluation: Videos will be judged on clarity, presentation skills, and the potential impact of the idea.",
     "Shortlisting: The top 30 teams will be selected for the final round.",
     "Hackathon: The final 30 teams will participate in a 24-hour hackathon at the REC campus."

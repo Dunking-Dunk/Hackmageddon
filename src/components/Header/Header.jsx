@@ -55,7 +55,7 @@ export default function Header() {
                             <a href={statement} className='link__item__link' download={statement}> Statements</a>
                         </li>
                         <li className="link__container__item">
-                            <a className='link__item__link' href='#rule'>Rules</a>
+                            <a className='link__item__link' href='/rules'>Rules</a>
                         </li>
                         <li className="link__container__item">
                             <a className='link__item__link' href='#timeline'>Timeline</a>

@@ -2,11 +2,8 @@ import './Home.css'
 import React from 'react'
 import Hero from '../components/screens/Hero/Hero'
 import About from '../components/screens/About/About'
-import Event from '../components/Event/Event'
 import Team from '../components/screens/Team/Team'
-import Marque from '../components/Marque/Marque'
 import Header from '../components/Header/Header';
-import Gallery from '../components/Gallery/Gallery'
 import Contact from '../components/screens/Contact/Contact'
 import Footer from '../components/Footer/Footer'
 import Timeline from '../components/screens/Timeline/Timeline';
@@ -17,7 +14,6 @@ import Faq from '../components/screens/Faq/Faq'
 import Prices from '../components/screens/Prices/Prices';
 import Rules from '../components/screens/Rules/Rules';
 import Statements from '../components/screens/Statements/Statements';
-import Loader from '../components/Loader/Loader'
 
 const Home = () => {
 
