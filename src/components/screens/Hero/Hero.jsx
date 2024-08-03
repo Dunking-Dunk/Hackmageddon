@@ -1,8 +1,8 @@
 import './Hero.css';
 import React from "react";
+import statement from '../../../assets/final ps.pdf'
 // import CountdownTimer from '../../CountDown/CountdownTimer';
 import Button from '../../Button/Button';
-import ButtonDiscord from '../../ButtonDiscord/ButtonDiscord';
 import HeroCanvas from '../../../canvas/Home';
 
 const Hero = () => {
@@ -28,15 +28,13 @@ const Hero = () => {
                 </div>
                 <div className="hero__buttons">
                     <div className="hero__button-left">
-                    <ButtonDiscord onClick={handleDiscordClick}>Discord Server</ButtonDiscord>
+                        <a href={statement} className="lg:text-4xl text-5xl" target="_blank">   <Button>ROUND 1 RESULTS!</Button></a>
                     </div>
-                    <div className="hero__button-right">
-                        <Button onClick={handleRegisterClick}>Register Now</Button>
-                    </div>
+
                 </div>
             </div>
         </div>
     );
 };
 
-export default Hero;
+export default Hero

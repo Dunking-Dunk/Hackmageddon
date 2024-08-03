@@ -3,11 +3,12 @@
     display: flex;
     width: 100%;
     overflow: hidden;
-    -webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
-    margin: 5rem 0rem;
+    margin: 2rem 0rem;
+    background-color: transparent;
 }
 
 .logos__slide {
+    background-color: transparent;
     white-space: nowrap;
     animation: animate 20s linear infinite;
 }
@@ -25,7 +26,7 @@
 .logos__text {
     color: var(--primary-color);
     padding: 1rem 2rem;
-    font-size: 2rem;
+    font-size: 4rem;
     margin: 2rem;
 }
 

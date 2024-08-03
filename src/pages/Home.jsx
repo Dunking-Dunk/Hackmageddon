@@ -14,6 +14,8 @@ import Faq from '../components/screens/Faq/Faq'
 import Prices from '../components/screens/Prices/Prices';
 import Rules from '../components/screens/Rules/Rules';
 import Statements from '../components/screens/Statements/Statements';
+import Marque from '../components/Marque/Marque'
+import Result from '../components/screens/Results/Result'
 
 const Home = () => {
 
@@ -31,8 +33,8 @@ const Home = () => {
                     starColor="white"
                     style={{ zIndex: -1, position: 'absolute' }}
                 />
+                <Result />
                 <About />
-                {/* <Marque /> */}
                 <Themes />
                 <Statements />
                 <Rules />

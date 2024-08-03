@@ -5,20 +5,20 @@ const Marque = () => {
     return (
         <div className='logos__slides'>
             <div className="logos__slide">
-                <span className='logos__text'>sponsor</span>
-                <span className='logos__text'>sponsor</span>
-                <span className='logos__text'>sponsor</span>
-                <span className='logos__text'>sponsor</span>
-                <span className='logos__text'>sponsor</span>
-                <span className='logos__text'>sponsor</span>
-                <span className='logos__text'>sponsor</span>
-                <span className='logos__text'>sponsor</span>
-                <span className='logos__text'>sponsor</span>
-                <span className='logos__text'>sponsor</span>
-                <span className='logos__text'>sponsor</span>
-                <span className='logos__text'>sponsor</span>
-                <span className='logos__text'>sponsor</span>
-                <span className='logos__text'>sponsor</span>
+                <span className='logos__text'>Results Are Out!</span>
+                <span className='logos__text'>Results Are Out!</span>
+                <span className='logos__text'>Results Are Out!</span>
+                <span className='logos__text'>Results Are Out!</span>
+                <span className='logos__text'>Results Are Out!</span>
+                <span className='logos__text'>Results Are Out!</span>
+                <span className='logos__text'>Results Are Out!</span>
+                <span className='logos__text'>Results Are Out!</span>
+                <span className='logos__text'>Results Are Out!</span>
+                <span className='logos__text'>Results Are Out!</span>
+                <span className='logos__text'>Results Are Out!</span>
+                <span className='logos__text'>Results Are Out!</span>
+                <span className='logos__text'>Results Are Out!</span>
+                <span className='logos__text'>Results Are Out!</span>
             </div>
         </div>
 
